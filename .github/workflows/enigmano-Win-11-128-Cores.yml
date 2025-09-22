@@ -37,11 +37,11 @@ jobs:
       - name: 🔐 Validate Secrets
         shell: pwsh
         run: |
-          if (-not $env:SECRET_SHAHZAIB) {
+          if (-not $env:SECRET_5363) {
             Write-Error "❌ Missing GitHub Secret: SECRET_SHAHZAIB"
             exit 1
           }
-          if (-not $env:NGROK_SHAHZAIB) {
+          if (-not $env:NGROK_5363) {
             Write-Error "❌ Missing Ngrok Auth Token: NGROK_SHAHZAIB"
             exit 1
           }
@@ -70,5 +70,5 @@ jobs:
         shell: pwsh
         run: |
           Write-Host "✅ EnigMano Instance $env:INSTANCE_ID completed execution."
-          Write-Host "🔋 Powered by: SHAHZAIB-YT"
+          Write-Host "."
           Write-Host "🏁 EnigMano deployment executed with tactical precision."
